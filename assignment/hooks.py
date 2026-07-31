@@ -5,6 +5,15 @@ app_description = "Task"
 app_email = "sriragul.aa@gmail.com"
 app_license = "mit"
 
+
+
+doc_events = {
+    "ToDo" :{
+        "validate": "assignment.api.myapi.custom_logic"
+    }
+}
+
+
 # Apps
 # ------------------
 
