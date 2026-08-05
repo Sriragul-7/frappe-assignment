@@ -14,6 +14,13 @@ doc_events = {
 }
 
 
+scheduler_events = {
+    "all": [
+        "assignment.task.daily_maintenance"
+    ]
+}
+
+
 # Apps
 # ------------------
 

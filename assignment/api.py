@@ -50,10 +50,11 @@ def training_demo():
             "enrollment_status",
             "Approved"
         )
-
+      
     return {
         "success": True,
         "records_found": len(results),
         "updated_program": program_name,
         "data": results
     }
+    
