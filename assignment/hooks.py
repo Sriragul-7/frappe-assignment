@@ -15,7 +15,7 @@ doc_events = {
 
 
 scheduler_events = {
-    "all": [
+    "daily": [
         "assignment.task.daily_maintenance"
     ]
 }
