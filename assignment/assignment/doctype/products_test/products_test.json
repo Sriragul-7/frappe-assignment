@@ -29,14 +29,14 @@
   },
   {
    "fieldname": "price",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "label": "Price"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-28 11:59:09.851580",
+ "modified": "2026-09-28 12:44:33.106935",
  "modified_by": "Administrator",
  "module": "Assignment",
  "name": "Products test",
