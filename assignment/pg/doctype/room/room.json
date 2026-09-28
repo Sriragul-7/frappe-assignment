@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "doc.name = f\"{doc.floor}-{doc.room_no}\"",
+ "creation": "2026-09-21 12:18:02.411491",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rooms_section",
+  "room_no",
+  "floor",
+  "status",
+  "column_break_kzcp",
+  "room_type",
+  "capacity",
+  "monthly_rent"
+ ],
+ "fields": [
+  {
+   "fieldname": "rooms_section",
+   "fieldtype": "Section Break",
+   "label": "Rooms"
+  },
+  {
+   "fieldname": "room_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Int",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Vacant\nPartially Occupied\nOccupied\nMaintenance"
+  },
+  {
+   "fieldname": "column_break_kzcp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "options": "Room Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Int",
+   "label": "Capacity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "room_type.monthly_rent",
+   "fieldname": "monthly_rent",
+   "fieldtype": "Currency",
+   "label": "Monthly Rent",
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-21 12:48:30.187934",
+ "modified_by": "Administrator",
+ "module": "PG",
+ "name": "Room",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "RA-.####",
+ "creation": "2026-09-21 15:43:28.423309",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "room_allocation_section",
+  "tenant",
+  "room",
+  "deposit_amount",
+  "allocation_status",
+  "remarks",
+  "column_break_krbu",
+  "check_in_date",
+  "check_in_time",
+  "check_out_date",
+  "check_out_time",
+  "amount_section",
+  "rent_amount",
+  "deposit_paid",
+  "deposit_settlement",
+  "settlement_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_allocation_section",
+   "fieldtype": "Section Break",
+   "label": "Room Allocation"
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "Tenant",
+   "options": "Tenant"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "label": "Room",
+   "options": "Room"
+  },
+  {
+   "fieldname": "deposit_amount",
+   "fieldtype": "Currency",
+   "label": "Deposit amount"
+  },
+  {
+   "fieldname": "allocation_status",
+   "fieldtype": "Select",
+   "label": "Allocation status",
+   "options": "Draft\nActive\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_krbu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check_in_date",
+   "fieldtype": "Date",
+   "label": "Check in date"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Time",
+   "label": "Check in time"
+  },
+  {
+   "fieldname": "check_out_date",
+   "fieldtype": "Date",
+   "label": "Check out date"
+  },
+  {
+   "fieldname": "check_out_time",
+   "fieldtype": "Time",
+   "label": "Check out Time"
+  },
+  {
+   "fieldname": "amount_section",
+   "fieldtype": "Section Break",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount"
+  },
+  {
+   "fieldname": "deposit_paid",
+   "fieldtype": "Currency",
+   "label": "Deposit paid"
+  },
+  {
+   "fieldname": "deposit_settlement",
+   "fieldtype": "Currency",
+   "label": "Deposit settlement"
+  },
+  {
+   "fieldname": "settlement_status",
+   "fieldtype": "Select",
+   "label": "Settlement status",
+   "options": "Pending\nSettled"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-21 17:02:01.668410",
+ "modified_by": "Administrator",
+ "module": "PG",
+ "name": "Room Allocation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
